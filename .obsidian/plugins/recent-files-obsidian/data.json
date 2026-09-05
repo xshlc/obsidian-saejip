@@ -1,0 +1,120 @@
+{
+  "recentFiles": [
+    {
+      "basename": "Community-Plugins-List",
+      "path": "Assets/Setup/Community-Plugins-List.md"
+    },
+    {
+      "basename": "Schema-Inheritance-Tree",
+      "path": "Assets/Setup/Schema-Inheritance-Tree.md"
+    },
+    {
+      "basename": "0-daily",
+      "path": "Assets/Templates/0-daily.md"
+    },
+    {
+      "basename": "0-frontmatter-interface",
+      "path": "Assets/Templates/0-frontmatter-interface.md"
+    },
+    {
+      "basename": "3-content-chapter-of-book",
+      "path": "Assets/Templates/3-content-chapter-of-book.md"
+    },
+    {
+      "basename": "3-content-consume-book",
+      "path": "Assets/Templates/3-content-consume-book.md"
+    },
+    {
+      "basename": "3-content-abstract-book",
+      "path": "Assets/Templates/3-content-abstract-book.md"
+    },
+    {
+      "basename": "3-content-quote",
+      "path": "Assets/Templates/3-content-quote.md"
+    },
+    {
+      "basename": "3-content-video",
+      "path": "Assets/Templates/3-content-video.md"
+    },
+    {
+      "basename": "3-content-video-transcript",
+      "path": "Assets/Templates/3-content-video-transcript.md"
+    },
+    {
+      "basename": "3-content-youtube-video",
+      "path": "Assets/Templates/3-content-youtube-video.md"
+    },
+    {
+      "basename": "3-content-youtube-video-transcript",
+      "path": "Assets/Templates/3-content-youtube-video-transcript.md"
+    },
+    {
+      "basename": "3-content-post",
+      "path": "Assets/Templates/3-content-post.md"
+    },
+    {
+      "basename": "3-abstract-content",
+      "path": "Assets/Templates/3-abstract-content.md"
+    },
+    {
+      "basename": "3-content-tv-series",
+      "path": "Assets/Templates/3-content-tv-series.md"
+    },
+    {
+      "basename": "3-content-movie",
+      "path": "Assets/Templates/3-content-movie.md"
+    },
+    {
+      "basename": "3-content-article",
+      "path": "Assets/Templates/3-content-article.md"
+    },
+    {
+      "basename": "3-content-resource-book",
+      "path": "Assets/Templates/3-content-resource-book.md"
+    },
+    {
+      "basename": "3-content-manga",
+      "path": "Assets/Templates/3-content-manga.md"
+    },
+    {
+      "basename": "Welcome",
+      "path": "Welcome.md"
+    },
+    {
+      "basename": "1-fleeting-proposition",
+      "path": "Assets/Templates/1-fleeting-proposition.md"
+    },
+    {
+      "basename": "1-abstract-fleeting",
+      "path": "Assets/Templates/1-abstract-fleeting.md"
+    },
+    {
+      "basename": "1-fleeting-question",
+      "path": "Assets/Templates/1-fleeting-question.md"
+    },
+    {
+      "basename": "1-fleeting-observation",
+      "path": "Assets/Templates/1-fleeting-observation.md"
+    },
+    {
+      "basename": "0-table-links-index",
+      "path": "Assets/Templates/0-table-links-index.md"
+    },
+    {
+      "basename": "0-table-links",
+      "path": "Assets/Templates/0-table-links.md"
+    },
+    {
+      "basename": "0-table-simple",
+      "path": "Assets/Templates/0-table-simple.md"
+    },
+    {
+      "basename": "0-backmatter-interface",
+      "path": "Assets/Templates/0-backmatter-interface.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}

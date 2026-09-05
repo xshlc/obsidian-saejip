@@ -1,0 +1,14 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "keywords": "multitext",
+    "date_published": "date",
+    "authors": "multitext",
+    "genre": "multitext",
+    "progress": "number",
+    "rating": "number",
+    "chapter": "number"
+  }
+}

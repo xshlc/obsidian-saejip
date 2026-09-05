@@ -4,5 +4,6 @@
     "old-hope-heading-colors",
     "old-hope-text-colors",
     "link-colors"
-  ]
+  ],
+  "textFontFamily": ""
 }
