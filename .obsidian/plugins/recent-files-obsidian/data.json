@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Welcome",
+      "path": "Welcome.md"
+    },
+    {
       "basename": "Community-Plugins-List",
       "path": "Assets/Setup/Community-Plugins-List.md"
     },
@@ -75,10 +83,6 @@
     {
       "basename": "3-content-manga",
       "path": "Assets/Templates/3-content-manga.md"
-    },
-    {
-      "basename": "Welcome",
-      "path": "Welcome.md"
     },
     {
       "basename": "1-fleeting-proposition",

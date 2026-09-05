@@ -49,8 +49,7 @@
               "title": "Community-Plugins-List"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "375d53ea1aa5eb16",
@@ -255,8 +254,11 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "74e44cd124b0e3ad",
+  "active": "65a73e01030d1c95",
   "lastOpenFiles": [
+    "Welcome.md",
+    "README.md",
+    "Assets/Setup/Community-Plugins-List.md",
     "4_Evergreen/Comparison",
     "4_Evergreen/Argument",
     "4_Evergreen/Character",
@@ -267,9 +269,7 @@
     "2_Areas/Research",
     "2_Areas/Learn",
     "2_Areas/ProjectArtifact",
-    "2_Areas/Project",
     "Assets/Setup/Schema-Inheritance-Tree.md",
-    "Assets/Setup/Community-Plugins-List.md",
     "Assets/Templates/0-daily.md",
     "Assets/Templates/0-frontmatter-interface.md",
     "Assets/Templates/3-content-chapter-of-book.md",
@@ -287,7 +287,6 @@
     "Assets/Templates/3-content-article.md",
     "Assets/Templates/3-content-resource-book.md",
     "Assets/Templates/3-content-manga.md",
-    "Welcome.md",
     "Assets/Templates/1-fleeting-proposition.md",
     "Assets/Templates/1-abstract-fleeting.md",
     "Assets/Templates/1-fleeting-question.md",
