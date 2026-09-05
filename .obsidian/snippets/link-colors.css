@@ -1,0 +1,35 @@
+:root {
+    --orange-dark: #af3a03;
+    --orange-bright: #c85f14;
+    --orange-brighter: #d65d0e;
+    --grey-dark: #7c6f64;
+    --grey-light: #bdae93;
+    --gray-lighter: #d5c4a1;
+    --hope-purple: #7851a9;
+}
+
+.theme-dark {
+  --link-color: var(--hope-purple);
+  --link-unresolved-color: #cc241d;
+}
+
+.theme-light {
+  --link-color: var(--hope-purple);
+  --link-unresolved-color: #cc241d;
+}
+
+/* Force link colors to stay consistent even when nested inside
+   headings, bold, italic, or code text that set their own color. */
+
+.markdown-rendered a.internal-link,
+.markdown-rendered a.external-link,
+.markdown-source-view.mod-cm6 .cm-hmd-internal-link,
+.markdown-source-view.mod-cm6 .cm-link,
+.markdown-source-view.mod-cm6 .cm-url {
+  color: var(--link-color) !important;
+}
+
+/* Optional: give unresolved (not-yet-created) links their own look too */
+.markdown-rendered a.internal-link.is-unresolved {
+  color: var(--link-unresolved-color, var(--link-color)) !important;
+}

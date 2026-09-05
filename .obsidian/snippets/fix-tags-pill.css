@@ -1,0 +1,22 @@
+/* Inline tags in Live Preview / editor */
+.cm-s-obsidian span.cm-hashtag-begin,
+.cm-s-obsidian span.cm-hashtag,
+.cm-s-obsidian span.cm-hashtag-end {
+    background-color: var(--tag-background);
+    color: var(--tag-color);
+    border: 0;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* Join the three pieces into one pill */
+.cm-s-obsidian span.cm-hashtag-begin {
+    padding-left: 6px;
+    border-radius: 999px 0 0 999px;
+}
+
+.cm-s-obsidian span.cm-hashtag-end {
+    padding-right: 6px;
+    border-radius: 0 999px 999px 0;
+}

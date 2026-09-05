@@ -1,0 +1,8 @@
+{
+  "cssTheme": "Minimal",
+  "enabledCssSnippets": [
+    "old-hope-heading-colors",
+    "old-hope-text-colors",
+    "link-colors"
+  ]
+}

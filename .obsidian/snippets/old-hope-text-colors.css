@@ -1,0 +1,42 @@
+
+.theme-dark {
+  --oh-yellow: #e7ce57;
+  --oh-orange: #ef7c2b;
+  --oh-green: #78bc65;
+  --oh-cyan: #50b4d8;
+}
+
+.theme-light {
+  --oh-yellow: #8a7119;
+  --oh-orange: #c85f14;
+  --oh-green: #3f7f34;
+  --oh-cyan: #167c9d;
+}
+
+/* Bold text */
+.markdown-rendered strong,
+.markdown-source-view.mod-cm6 .cm-strong {
+  color: var(--oh-green);
+}
+
+/* Italic text (Old Hope leaves this as the normal text color) */
+.markdown-rendered em,
+.markdown-source-view.mod-cm6 .cm-em {
+  color: var(--text-normal);
+}
+
+/* Bold + italic text: no distinct color in Old Hope, so it falls back
+   to the italic rule above (normal text color). Uncomment below if you'd
+   rather it be purple like plain bold text: */
+/*
+.markdown-rendered strong em,
+.markdown-source-view.mod-cm6 .cm-strong.cm-em {
+  color: var(--oh-purple);
+}
+*/
+
+/* Inline code (`text`) */
+.markdown-rendered code,
+.markdown-source-view.mod-cm6 .cm-inline-code {
+  color: var(--oh-green);
+}
