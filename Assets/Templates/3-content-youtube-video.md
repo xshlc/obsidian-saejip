@@ -20,3 +20,4 @@ created: "{{date}} {{time}}"
 modified:
 template_version: 0.0.1
 ---
+## {{title}}
