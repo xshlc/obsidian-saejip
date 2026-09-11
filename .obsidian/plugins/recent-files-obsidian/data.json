@@ -1,12 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "0-table-links",
-      "path": "Assets/Templates/0-table-links.md"
+      "basename": "Tag Taxonomy",
+      "path": "Clippings/Tag Taxonomy.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "Theme-Preview",
+      "path": "Theme-Preview.md"
+    },
+    {
+      "basename": "Schema-Inheritance-Tree",
+      "path": "Assets/Setup/Schema-Inheritance-Tree.md"
+    },
+    {
+      "basename": "Community-Plugins-List",
+      "path": "Assets/Setup/Community-Plugins-List.md"
     },
     {
       "basename": "3-content-consume-book",
       "path": "Assets/Templates/3-content-consume-book.md"
+    },
+    {
+      "basename": "0-table-links",
+      "path": "Assets/Templates/0-table-links.md"
     },
     {
       "basename": "3-content-chapter-of-book",
@@ -69,24 +89,8 @@
       "path": "Assets/Templates/1-abstract-fleeting.md"
     },
     {
-      "basename": "Schema-Inheritance-Tree",
-      "path": "Assets/Setup/Schema-Inheritance-Tree.md"
-    },
-    {
       "basename": "3-content-youtube-video-transcript",
       "path": "Assets/Templates/3-content-youtube-video-transcript.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
-    },
-    {
-      "basename": "Welcome",
-      "path": "Welcome.md"
-    },
-    {
-      "basename": "Community-Plugins-List",
-      "path": "Assets/Setup/Community-Plugins-List.md"
     },
     {
       "basename": "3-content-abstract-book",

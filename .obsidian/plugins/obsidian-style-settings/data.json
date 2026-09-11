@@ -8,5 +8,9 @@
   "minimal-style@@h6-weight": 600,
   "minimal-style@@h5-weight": 600,
   "minimal-style@@h5-variant": "small-caps",
-  "minimal-style@@h6-variant": "small-caps"
+  "minimal-style@@h6-variant": "small-caps",
+  "claude-code-theme@@claude-serif-body": true,
+  "claude-code-theme@@claude-mono-headings": false,
+  "claude-code-theme@@cc-loud-code": true,
+  "claude-code-theme@@claude-serif-headings": true
 }

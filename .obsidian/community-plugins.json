@@ -1,5 +1,4 @@
 [
-  "obsidian-minimal-settings",
   "obsidian-better-command-palette",
   "floating-toc",
   "omnisearch",
@@ -9,5 +8,7 @@
   "obsidian-paste-image-rename",
   "obsidian-link-converter",
   "file-tree-alternative",
-  "front-matter-timestamps"
+  "front-matter-timestamps",
+  "omni-viewer",
+  "highlightr-plugin"
 ]

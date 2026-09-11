@@ -1,9 +1,10 @@
 {
-  "cssTheme": "Minimal",
+  "cssTheme": "Claude Code Orange",
   "enabledCssSnippets": [
     "old-hope-heading-colors",
     "old-hope-text-colors",
     "link-colors"
   ],
-  "textFontFamily": ""
+  "textFontFamily": "MonoLisa Nerd Font Mono,IBM Plex Mono,AtkynsonMono Nerd Font",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,Operator Mono,Adwaita Mono"
 }
