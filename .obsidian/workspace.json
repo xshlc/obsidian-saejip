@@ -132,7 +132,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "pnpm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
