@@ -10,11 +10,9 @@ From Korean **새** (“new”) + **집** (“house, home”), giving the litera
 ## `saejip` vault philosophy
 
 - adopt methods from several PKM frameworks including...
-	- PARA
 	- Zettelkasten
 	- Evergreen
-	- ACE
-- combine methods into best practices for frictionless, focused, organizable notes
+- combine methods into best practices for frictionless notes
 
 
 
