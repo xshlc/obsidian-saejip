@@ -1,10 +1,10 @@
 {
-  "cssTheme": "Claude Code Orange",
+  "cssTheme": "Shimmering Focus",
   "enabledCssSnippets": [
     "old-hope-heading-colors",
     "old-hope-text-colors",
     "link-colors"
   ],
-  "textFontFamily": "MonoLisa Nerd Font Mono,IBM Plex Mono,AtkynsonMono Nerd Font",
-  "monospaceFontFamily": "JetBrainsMono Nerd Font Mono,Operator Mono,Adwaita Mono"
+  "textFontFamily": "IBM Plex Mono,MonoLisa Nerd Font Mono,AtkynsonMono Nerd Font",
+  "monospaceFontFamily": "Adwaita Mono,JetBrainsMono Nerd Font,JetBrainsMono Nerd Font Mono,Operator Mono"
 }

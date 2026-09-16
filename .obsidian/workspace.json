@@ -8,94 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "65a73e01030d1c95",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Assets/Templates/3-content-youtube-video-transcript.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3-content-youtube-video-transcript"
-            }
-          },
-          {
-            "id": "54f998006cef34b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Assets/Templates/3-content-consume-book.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "3-content-consume-book"
-            }
-          },
-          {
             "id": "e5733e97453a6791",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "40 Utils/New Templates/daily.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "64ab81f2bdaeac6a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Assets/Setup/Community-Plugins-List.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Community-Plugins-List"
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
-        "id": "375d53ea1aa5eb16",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "0d0bd9eb7286e7fa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Clippings/Tag Taxonomy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Tag Taxonomy"
-            }
-          },
-          {
-            "id": "841083f12fb36b34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Theme-Preview.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Theme-Preview"
+              "title": "daily"
             }
           }
         ]
@@ -132,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "pnpm",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -167,7 +90,7 @@
             }
           },
           {
-            "id": "4eaddd921700da27",
+            "id": "b9bdfb373f0a845b",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -180,7 +103,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 256.7749938964844
   },
   "right": {
     "id": "0c22317f636b0f85",
@@ -284,46 +207,47 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "file-tree-alternative:File Tree Alternative Plugin": false,
-      "omnisearch:Omnisearch": false
+      "omnisearch:Omnisearch": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "74e44cd124b0e3ad",
+  "active": "e5733e97453a6791",
   "lastOpenFiles": [
-    "Clippings/Tag Taxonomy.md",
-    "Clippings",
-    "README.md",
+    "50 Assets/Setup/Community-Plugins-List.md",
+    "40 Utils/New Templates/daily.md",
     "Theme-Preview.md",
-    "Assets/Setup/Schema-Inheritance-Tree.md",
-    "90 Meta",
-    "80 Archive",
-    "50 Pages",
-    "40 Helper Files",
-    "20 Periodic",
-    "10 Templates",
-    "00 System",
-    "PARA-Evergreen-Zettel",
-    "Assets/Setup/Community-Plugins-List.md",
-    "Assets/Templates/3-content-consume-book.md",
-    "Assets/Templates/0-table-links.md",
+    "50 Assets/Setup/Schema-Inheritance-Tree.md",
+    "50 Assets/Setup/Untitled.md",
+    "50 Assets/Templates/0-backmatter-interface.md",
+    "40 Utils/New Templates",
+    "Clippings/Tag Taxonomy.md",
+    "README.md",
+    "40 Utils/Templates",
+    "20 Core/2 Sources",
+    "20 Core/1 Incubator",
+    "10 System/example-move.md",
+    "60 Inbox",
+    "50 Assets",
+    "40 Utils",
+    "30 Logs",
+    "20 Core",
+    "50 Assets/Templates/3-content-consume-book.md",
+    "50 Assets/Templates/3-content-youtube-video-transcript.md",
+    "Clippings",
+    "50 Assets/Templates/0-table-links.md",
     "3_Content/Videos/Untitled.md",
     "Untitled.md",
-    "Assets/Templates/3-content-chapter-of-book.md",
-    "Assets/Templates/0-frontmatter-interface.md",
-    "Assets/Templates/0-backmatter-interface.md",
-    "Assets/Templates/3-content-youtube-video.md",
+    "50 Assets/Templates/3-content-chapter-of-book.md",
+    "50 Assets/Templates/0-frontmatter-interface.md",
+    "50 Assets/Templates/3-content-youtube-video.md",
     "3_Content/Videos/templater-tutorial.md",
-    "Assets/Templates/3-content-video-transcript.md",
-    "Assets/Templates/3-content-video.md",
-    "Assets/Templates/3-content-resource-book.md",
-    "Assets/Templates/3-content-article.md",
-    "Assets/Templates/0-daily.md",
-    "Assets/Templates/2-abstract-area.md",
-    "Assets/Templates/0-table-simple.md",
-    "Assets/Templates/3-content-quote.md",
-    "Assets/Templates/3-content-manga.md",
-    "Assets/Templates/2-area-project.md",
-    "Assets/Templates/0-table-links-index.md",
-    "Assets/Templates/1-abstract-fleeting.md",
-    "PARA-Evergreen-Zettel/4_Evergreen/Comparison"
+    "50 Assets/Templates/3-content-video-transcript.md",
+    "50 Assets/Templates/3-content-video.md",
+    "50 Assets/Templates/3-content-resource-book.md",
+    "50 Assets/Templates/3-content-article.md",
+    "50 Assets/Templates/0-daily.md",
+    "50 Assets/Templates/2-abstract-area.md",
+    "50 Assets/Templates/0-table-simple.md",
+    "50 Assets/Templates/3-content-quote.md"
   ]
 }

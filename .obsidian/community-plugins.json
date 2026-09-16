@@ -7,8 +7,9 @@
   "obsidian-style-settings",
   "obsidian-paste-image-rename",
   "obsidian-link-converter",
-  "file-tree-alternative",
   "front-matter-timestamps",
   "omni-viewer",
-  "highlightr-plugin"
+  "highlightr-plugin",
+  "templater-obsidian",
+  "file-tree-alternative"
 ]

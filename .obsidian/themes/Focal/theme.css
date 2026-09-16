@@ -1,0 +1,433 @@
+/* Focal
+   A minimal accent theme on top of Obsidian's default look: colored
+   headings, callouts, and tags; a focused-tab accent with an optional
+   background wash; and an optional fade on inactive panes. Pick a
+   color palette (Flexoki, Penumbra, or Tailwind CSS), or hand-pick
+   every color yourself. */
+
+/* @settings
+
+name: Focal
+id: focal
+settings:
+    -
+        id: focal-headings-heading
+        title: Headings
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: fh-palette
+        title: Color palette
+        description: Sets the heading colors and the active pane accent together. Any color below can still be hand-picked on top of it.
+        type: class-select
+        allowEmpty: false
+        default: fh-palette-flexoki
+        options:
+            -
+                label: Flexoki
+                value: fh-palette-flexoki
+            -
+                label: Penumbra
+                value: fh-palette-penumbra
+            -
+                label: Tailwind CSS
+                value: fh-palette-tailwind
+    -
+        id: fh-h1
+        title: Heading 1
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#AF3029'
+        default-dark: '#D14D41'
+    -
+        id: fh-h2
+        title: Heading 2
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#BC5215'
+        default-dark: '#DA702C'
+    -
+        id: fh-h3
+        title: Heading 3
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#AD8301'
+        default-dark: '#D0A215'
+    -
+        id: fh-h4
+        title: Heading 4
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#66800B'
+        default-dark: '#879A39'
+    -
+        id: fh-h5
+        title: Heading 5
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#24837B'
+        default-dark: '#3AA99F'
+    -
+        id: fh-h6
+        title: Heading 6
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#205EA6'
+        default-dark: '#4385BE'
+    -
+        id: fh-color-inline-title
+        title: Color the note title
+        description: Off by default, so the inline title stays neutral instead of inheriting the H1 color.
+        type: class-toggle
+        default: false
+    -
+        id: focal-active-pane-heading
+        title: Active pane
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: ap-accent
+        title: Active pane accent
+        type: variable-themed-color
+        format: hex
+        opacity: false
+        default-light: '#9D4310'
+        default-dark: '#EC8B49'
+    -
+        id: ap-tab-style
+        title: Active tab style
+        description: Solid fills the tab with the accent; Tinted uses a translucent wash; Text only colors the label.
+        type: class-select
+        allowEmpty: false
+        default: ap-fill-none
+        options:
+            -
+                label: Solid fill
+                value: ap-fill-solid
+            -
+                label: Tinted fill
+                value: ap-fill-tint
+            -
+                label: Text only
+                value: ap-fill-none
+    -
+        id: ap-bar
+        title: Accent bar thickness
+        description: Underline beneath the active tab. Hidden when the tab is solid-filled.
+        type: variable-number-slider
+        default: 3
+        min: 0
+        max: 4
+        step: 1
+        format: px
+    -
+        id: ap-dim-inactive
+        title: Dim inactive panes
+        description: Fades the content of panes that don't have focus.
+        type: class-toggle
+        default: false
+    -
+        id: ap-dim-opacity
+        title: Inactive pane opacity
+        type: variable-number-slider
+        default: 0.25
+        min: 0.15
+        max: 1
+        step: 0.05
+    -
+        id: ap-bg-wash
+        title: Active pane background wash
+        description: Faint background tint across the whole focused pane, extending the tab accent.
+        type: class-toggle
+        default: false
+    -
+        id: ap-bg-opacity
+        title: Background wash strength
+        type: variable-number-slider
+        default: 6
+        min: 2
+        max: 20
+        step: 1
+        format: '%'
+    -
+        id: focal-elements-heading
+        title: Elements
+        type: heading
+        level: 2
+        collapsed: false
+    -
+        id: fh-tag-tint
+        title: Tint tags
+        description: Colors #tags with the active-pane accent instead of Obsidian's default neutral style. Callout colors always follow the palette; there is no separate toggle for them.
+        type: class-toggle
+        default: false
+
+*/
+
+/* Defaults, so the theme looks right even if Style Settings is disabled. */
+.theme-light {
+	--fh-h1: #AF3029;
+	--fh-h2: #BC5215;
+	--fh-h3: #AD8301;
+	--fh-h4: #66800B;
+	--fh-h5: #24837B;
+	--fh-h6: #205EA6;
+	--ap-accent: #9D4310;
+	--ap-fill-text: #FFFCF0;
+}
+
+.theme-dark {
+	--fh-h1: #D14D41;
+	--fh-h2: #DA702C;
+	--fh-h3: #D0A215;
+	--fh-h4: #879A39;
+	--fh-h5: #3AA99F;
+	--fh-h6: #4385BE;
+	--ap-accent: #EC8B49;
+	--ap-fill-text: #1C1B1A;
+}
+
+body {
+	--ap-bar: 3px;
+	--ap-dim-opacity: 0.25;
+	--ap-bg-opacity: 6%;
+}
+
+/* ==========================================================================
+   Palettes
+   fh-palette-flexoki is the default and is set above. These two override
+   it when chosen. Specificity note: "body.fh-palette-x.theme-y" beats the
+   plain ".theme-y" defaults above (two classes vs. one), and a hand-picked
+   color from an individual Style Settings control still wins over both,
+   since Style Settings applies those as an inline style on body.
+   ========================================================================== */
+
+/* --- Penumbra -----------------------------------------------------------
+   Penumbra's accent hues are the same value on light and dark backgrounds
+   by design (github.com/nealmckee/penumbra); only its neutrals change
+   between themes. So this is one rule, not a light/dark pair. */
+body.fh-palette-penumbra {
+	--fh-h1: #CB7459;
+	--fh-h2: #A38F2D;
+	--fh-h3: #46A473;
+	--fh-h4: #00A0BE;
+	--fh-h5: #7E87D6;
+	--fh-h6: #BD72A8;
+	--ap-accent: #BA823A;
+	--ap-fill-text: #24272B;
+}
+
+/* --- Tailwind CSS ---------------------------------------------------------
+   600-weight shades on light backgrounds, 400-weight on dark, matching
+   Tailwind's own light/dark text-color convention. Accent uses violet,
+   the one hue not already spent on a heading. */
+body.fh-palette-tailwind.theme-light {
+	--fh-h1: #E7000B;
+	--fh-h2: #F54900;
+	--fh-h3: #E17100;
+	--fh-h4: #00A63E;
+	--fh-h5: #009689;
+	--fh-h6: #155DFC;
+	--ap-accent: #7F22FE;
+	--ap-fill-text: #FFFFFF;
+}
+
+body.fh-palette-tailwind.theme-dark {
+	--fh-h1: #FF6467;
+	--fh-h2: #FF8904;
+	--fh-h3: #FFB900;
+	--fh-h4: #05DF72;
+	--fh-h5: #00D5BE;
+	--fh-h6: #51A2FF;
+	--ap-accent: #A684FF;
+	--ap-fill-text: #18181B;
+}
+
+/* ==========================================================================
+   Headings
+   Obsidian resolves headings through --h1-color … --h6-color in every
+   context (reading view, Live Preview, source mode, inline title),
+   so setting those variables is all that's needed.
+   ========================================================================== */
+
+/* The inline note title inherits --h1-color by default. Keep it neutral
+   so the H1 color reads as document structure, not as the note's name. */
+body {
+	--inline-title-color: var(--text-normal);
+	--h1-color: var(--fh-h1);
+	--h2-color: var(--fh-h2);
+	--h3-color: var(--fh-h3);
+	--h4-color: var(--fh-h4);
+	--h5-color: var(--fh-h5);
+	--h6-color: var(--fh-h6);
+}
+
+body.fh-color-inline-title {
+	--inline-title-color: var(--fh-h1);
+}
+
+/* ==========================================================================
+   Callouts
+   Obsidian reads callout color from --callout-color, which accepts any
+   valid CSS color, so it can point straight at the palette variables
+   above. Always on, no toggle, so a callout's color always matches
+   whichever palette is active. Grouped by meaning, not by exact hue
+   match to Obsidian's own defaults: danger/failure/bug read as red,
+   success as green, and so on. Quote is left alone; it is meant to
+   stay quiet. Obsidian maps every alias (e.g. "check", "hint") to one
+   of these primary types, so aliases need no selector of their own.
+   ========================================================================== */
+
+.callout[data-callout="note"],
+.callout[data-callout="info"],
+.callout[data-callout="todo"] {
+	--callout-color: var(--fh-h6);
+}
+
+.callout[data-callout="abstract"],
+.callout[data-callout="tip"] {
+	--callout-color: var(--fh-h5);
+}
+
+.callout[data-callout="success"] {
+	--callout-color: var(--fh-h4);
+}
+
+.callout[data-callout="question"] {
+	--callout-color: var(--fh-h3);
+}
+
+.callout[data-callout="warning"] {
+	--callout-color: var(--fh-h2);
+}
+
+.callout[data-callout="failure"],
+.callout[data-callout="danger"],
+.callout[data-callout="bug"] {
+	--callout-color: var(--fh-h1);
+}
+
+.callout[data-callout="example"] {
+	--callout-color: var(--ap-accent);
+}
+
+/* ==========================================================================
+   Tags
+   Off by default, since it recolors a native element rather than adding
+   a new one. Uses the active-pane accent, so a tag reads as "the same
+   accent" as the rest of the theme instead of getting its own color.
+   ========================================================================== */
+
+body.fh-tag-tint {
+	--tag-color: var(--ap-accent);
+	--tag-background: color-mix(in srgb, var(--ap-accent) 14%, var(--background-primary));
+	--tag-border-color: color-mix(in srgb, var(--ap-accent) 30%, transparent);
+}
+
+/* ==========================================================================
+   Active pane
+   Visible indication of which pane / tab actually has focus. Obsidian
+   marks the active tab per tab-group, so in a split every group shows an
+   "is-active" tab. Scoping under .workspace-tabs.mod-active narrows that
+   to the one genuinely focused leaf.
+   ========================================================================== */
+
+/* --- Accent bar (skipped when the tab is solid-filled) ------------------ */
+
+.workspace-tabs.mod-active .workspace-tab-header.is-active {
+	position: relative;
+}
+
+body:not(.ap-fill-solid)
+	.workspace-tabs.mod-active
+	.workspace-tab-header.is-active::after {
+	content: "";
+	position: absolute;
+	inset: auto 8px 0 8px;
+	height: var(--ap-bar);
+	border-radius: var(--ap-bar);
+	background-color: var(--ap-accent);
+	pointer-events: none;
+}
+
+/* --- Text tint ---------------------------------------------------------
+   Obsidian's own rule for this is gated behind body.is-focused, so the
+   cue would vanish whenever the window loses focus. These selectors carry
+   enough specificity to win in both focus states. */
+
+body {
+	--tab-text-color-focused-active-current: var(--ap-accent);
+}
+
+body:not(.ap-fill-solid)
+	.workspace-tabs.mod-active
+	.workspace-tab-header-container
+	.workspace-tab-header.is-active
+	:is(.workspace-tab-header-inner-title, .workspace-tab-header-inner-icon) {
+	color: var(--ap-accent);
+}
+
+/* --- Solid fill -------------------------------------------------------- */
+
+body.ap-fill-solid .workspace-tabs.mod-active {
+	--tab-background-active: var(--ap-accent);
+}
+
+body.ap-fill-solid
+	.workspace-tabs.mod-active
+	.workspace-tab-header-container
+	.workspace-tab-header.is-active
+	:is(
+		.workspace-tab-header-inner-title,
+		.workspace-tab-header-inner-icon,
+		.workspace-tab-header-inner-close-button
+	) {
+	color: var(--ap-fill-text);
+}
+
+/* --- Tinted fill ------------------------------------------------------- */
+
+body.ap-fill-tint .workspace-tabs.mod-active {
+	--tab-background-active: color-mix(
+		in srgb,
+		var(--ap-accent) 16%,
+		var(--background-primary)
+	);
+}
+
+/* --- Dim unfocused panes ----------------------------------------------- */
+
+/* No :has(): a broad :has() selector is a real performance risk, and
+   Obsidian's own theme scanner flags it. The tradeoff is that when focus
+   leaves the root splits entirely (a sidebar: file explorer, search),
+   no root tab-group is "mod-active", so every root pane dims at once
+   instead of staying untouched. */
+body.ap-dim-inactive
+	.workspace-split.mod-root
+	.workspace-tabs:not(.mod-active)
+	.workspace-leaf-content {
+	opacity: var(--ap-dim-opacity);
+	transition: opacity 120ms ease;
+}
+
+/* --- Background wash -----------------------------------------------------
+   Scoped to .workspace-split.mod-root so a focused sidebar (file explorer,
+   search) never gets this treatment, only an actual editor pane. */
+body.ap-bg-wash
+	.workspace-split.mod-root
+	.workspace-leaf.mod-active
+	.view-content {
+	background-color: color-mix(
+		in srgb,
+		var(--ap-accent) var(--ap-bg-opacity),
+		var(--background-primary)
+	);
+}

@@ -9,8 +9,21 @@
   "minimal-style@@h5-weight": 600,
   "minimal-style@@h5-variant": "small-caps",
   "minimal-style@@h6-variant": "small-caps",
-  "claude-code-theme@@claude-serif-body": true,
+  "claude-code-theme@@claude-serif-body": false,
   "claude-code-theme@@claude-mono-headings": false,
   "claude-code-theme@@cc-loud-code": true,
-  "claude-code-theme@@claude-serif-headings": true
+  "claude-code-theme@@claude-serif-headings": true,
+  "shimmering-focus@@alt-colorschemes": "colorscheme-everforest",
+  "shimmering-focus@@angular-shapes": false,
+  "shimmering-focus@@normal-header-bar": false,
+  "shimmering-focus@@hidden-sidebars-hidden-statusbar": false,
+  "shimmering-focus@@normal-tab-bar": true,
+  "shimmering-focus@@hide-vault-switcher-and-settings": false,
+  "shimmering-focus@@show-new-tab-button": true,
+  "shimmering-focus@@show-tab-list-button": true,
+  "shimmering-focus@@show-sidebar-toggle-buttons": true,
+  "shimmering-focus@@show-close-buttons": true,
+  "shimmering-focus@@show-suggester-instructions": false,
+  "shimmering-focus@@hide-inline-title-when-more-than-one-tab": false,
+  "shimmering-focus@@show-sidebar-header-buttons": true
 }
